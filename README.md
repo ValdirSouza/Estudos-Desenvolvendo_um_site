@@ -7,5 +7,5 @@ Este projeto é com o intuito de estudar as linguagens HTML, CSS e JavaScript e 
 ___
 
 [W3Schools](https://www.w3schools.com/html/default.asp)  
-[Digital Inovation One](https://web.dio.me/play?section_type=course&skill=af94e086-7222-4626-bf21-b7d8ebecdbfd)
-[MDN Web Docs](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
+[Digital Inovation One](https://web.dio.me/play?section_type=course&skill=af94e086-7222-4626-bf21-b7d8ebecdbfd)  
+[MDN Web Docs](https://developer.mozilla.org/pt-BR/docs/Web/HTML)  
