@@ -14,28 +14,48 @@
             arquivos, endereços de e-mails, ligações na mesma página ou endereços na URL,
             podendo levar por exemplo a conversas em aplicativos.
         </p>
+
         <h3>- Atributos</h3>
+
         <mark style="background-color: rgba(227, 224, 224, 0.986);">download</mark>
         <p>
             Este atributo direciona o usuário a salvar o documento que está referenciado no
             link em vez de nagevar por ele e pode ser usado com valor ou sem.<br>
-            <ul>
-                <li>
-                    Definindo um valor para esse atributo, ele irá sugerir como nome do arquivo.
-                    Caso tenha caracteres especiais que algum sistema não aceite em nome de
-                    arquivos, então o navegador irá ajustar o nome para o sugerido caso
-                    necessário.
-                </li>
-            </ul>
         </p>
+        <ul>
+            <li>
+                Definindo um valor para esse atributo, ele irá sugerir como nome do arquivo.
+                Caso tenha caracteres especiais que algum sistema não aceite em nome de arquivos,
+                então o navegador irá ajustar o nome para o sugerido caso necessário.
+            </li>
+            <li>
+                Não definindo um valor o navegador irá solicitar ao usuário um nome e/ou extensão
+                para que o arquivo seja salvo 
+            </li>
+        </ul>
+
         <mark style="background-color: rgba(227, 224, 224, 0.986);">href</mark>
         <p>
-
+            Este atributo sendo o mais importante do elemento é necessário para efetuar a conexão
+            especificando uma localização para a qual o usário irá ir no navegador.<br>
+            A princípio o link ficará visível para o leitor, caso o mesmo não utilize um título
+            para sobrepor o link, mas o link não deixara de aparecer, basta o usuário colocar o 
+            mouse sobre o link que o mesmo irá aparecer no rodapé do navegador que estiver sendo 
+            utilizado.
         </p>
+
         <mark style="background-color: rgba(227, 224, 224, 0.986);">target</mark>
         <p>
-            
+            Este atributo especifica onde irá abrir o documento vinculado ao clicar no link.<br>
+            Tem se 4 valores que possam ser dados a este atributo, começando do primeiro que é o
+            mais usado até o último que é o menos usado:
         </p>
+        <ol>
+            <li>_self</li>
+            <li>_blank</li>
+            <li>_top</li>
+            <li>parent</li>
+        </ol>
         <mark style="background-color: rgba(227, 224, 224, 0.986);">title</mark>
         <p>
             
