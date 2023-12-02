@@ -51,14 +51,27 @@
             mais usado até o último que é o menos usado:
         </p>
         <ol>
-            <li>_self</li>
-            <li>_blank</li>
-            <li>_top</li>
-            <li>parent</li>
+            <li>
+                _self: Abre o documento na mesma guia/janela em que foi clicado. Esse tipo de
+                comportamento é o padrão da tag "a"
+            </li>
+            <li>_blank: Abre o documento em uma nova guia/janela</li>
+            <li>
+                _top: Abre o documento do contexto de navegação mais alto que antecesde o atual.
+                Se não tiver antepassados, comporta-se como o <i>_self</i>
+            </li> 
+            <li>
+                _parent: Abre o documento do contexto de navegação pai do atual. Se não tiver
+                nenhum pai, comporta-se como o <i>_self</i> 
+            </li>
         </ol>
         <mark style="background-color: rgba(227, 224, 224, 0.986);">title</mark>
         <p>
-            
+            O atributo <i>title</i> ele irá trazer um "balão" de informações sobre o link a
+            colocar o mouse sobre o texto a ser acessado, essas informações são as que colocamos
+            no texto do atributo <i>title</i>. Esse "balão" é mais conhecido como <i>tooltips</i>.
         </p>
+
+        <a href="index.html">< voltar</a>
     </body>
 </html>
