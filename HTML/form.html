@@ -10,8 +10,16 @@
     <body>
         <h2 class="title2">Falando Sobre Formulários</h2>
         <h3 class="title3">- Introdução</h3>
-
-        <form>
+        <p>
+            Formulário serve para preenchimento de informações e praticamente trabalho
+            junto com o servidor, onde é enviado e processado essas informações. <br>
+            Em <i>method</i> possui dois valores possível, sendo o método <i>GET</i> e <i>POST</i>
+            No método <i>GET</i> irá coleta as informações, porém elas são passadas na URL do
+            site, já no <i>POST</i> as infomrações são capsuladas e enviadas para o link que é passado
+            para o <i>action</i>
+        </p>
+        
+        <form name="Exemplo" target="" method=" POST" action="#">
             Nome: <input type="text" name="name" /><br>
             Idade: <input type="number" name="age" /><br>
             Senha: <input type="password" name="password" /><br>
@@ -19,6 +27,8 @@
         </form> <br>
 
         <a class="back" href="index.html">< voltar</a>
-
+        <button class="back">
+            <a class="back" href="index.html">< voltar</a>
+        </button>
     </body>
 </html>
