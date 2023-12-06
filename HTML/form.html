@@ -13,22 +13,65 @@
         <h3 class="title3">- Introdução</h3>
         <p>
             Formulário serve para preenchimento de informações e praticamente trabalha
-            junto com o servidor, onde é enviado e processado essas informações. <br>
-            Em <i>method</i> possui dois valores possível, sendo o método <i>GET</i> e <i>POST</i>
-            No método <i>GET</i> irá coleta as informações, porém elas são passadas na URL do
-            site, já no <i>POST</i> as infomrações são capsuladas e enviadas para o link que é passado
-            para o <i>action</i>
+            junto com o servidor, para onde é enviado e processado esses dados. <br>
+            Ele é declarado pela tag <i>form</i>, que é composta por atributos para configurações
+            e <i>inputs</i> para compor sua estruta de entrada de informações.
         </p>
         
+        <h3 class="title3">- Atributos</h3>
+
+        <mark class="caption">name</mark>
+        <p>
+            É um atributo para nomear a tag e fazer sua indentificação, com isso é possível
+            através do <i>JavaScript</i> fazer uma validação dos dados nos campos que foram
+            inseridos. É necessário para encontrar a instância do formulário
+        </p>
+
+        <mark class="caption">action</mark>
+        <p>
+            Este atributo é para direcionar para onde as informações do formulário iram, pode ser
+            para o endereço do servidor ou uma página web, URL. 
+        </p>
+
+        <mark class="caption">method</mark>
+        <p>
+            Essa atributo possui o método <i>GET</i> e <i>POST</i>:
+        </p>
+        <ul>
+            <li>
+                No método <i>GET</i> irar coleta as informações preenchidas no formulário e
+                envia-lás na propria URL do site, isso é perigoso devido ao risco de está enviando
+                dados que são importantes, como senhas, documentos de indentificação e etc.
+            </li>
+            <li>
+                No método <i>POST</i> as informações são capsuladas e enviadas para o link que é
+                atribuido para a tag <i>action</i>.
+            </li>
+        </ul>
+
+        <mark class="caption">target</mark>
+        <p>
+            Este atributo está explicado na página sobre <a href="links.html">links</a>
+        </p>
+
+        <mark class="caption" >autocomplete</mark>
+        <p>
+            Este atributo possui os valores <i>on</i> e <i>off</i>, onde <strong>on</strong>
+            é para manter os dados que foram preenchidos no formulário mesmo depois que tenham
+            sido enviados e o <strong>off</strong> é para inebir esse armazenamento temporário.
+            Por padrão ele já é desabilitado, assim não mantendo as informações que foram
+            digitadas pré salvas
+        </p>
+
         <form name="Exemplo" target="" method=" POST" action="#">
             Nome: <input type="text" name="name" /><br>
             Idade: <input type="number" name="age" /><br>
             Senha: <input type="password" name="password" /><br>
-            <button type="submit">salvar</button>
+            <button type="submit">Salvar</button>
         </form> <br>
 
         <a class="back" href="index.html">< voltar</a>
-        
+
         <button class="back">
             <a class="back" href="index.html">< voltar</a>
         </button>
