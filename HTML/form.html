@@ -12,13 +12,15 @@
 
         <h3 class="title3">- Introdução</h3>
         <p>
-            Formulário serve para preenchimento de informações e praticamente trabalha
-            junto com o servidor, para onde é enviado e processado esses dados. <br>
-            Ele é declarado pela tag <i>form</i>, que é composta por atributos para configurações
-            e <i>inputs</i> para compor sua estruta de entrada de informações.
+            Formulário serve para preenchimento de informações e praticamente trabalha junto com
+            o servidor, para onde é enviado e processado esses dados. <br>
+            Ele é declarado pela tag <a href="form.html#exemploform"><i>form</i></a>, que é composta por 
+            <a href="form.html#back">atributos</a> para configurações e
+            <a href="form.html#inputetipos">inputs</a> para compor sua estruta de entrada de
+            informações.
         </p>
         
-        <h3 class="title3">- Atributos</h3>
+        <h3 class="title3" id="atributos" name="atributos">- Atributos</h3>
 
         <mark class="caption">name</mark>
         <p>
@@ -63,14 +65,23 @@
             digitadas pré salvas
         </p>
 
-        <form name="Exemplo" target="" method=" POST" action="#">
+        <h3 class="title3" id="inputetipos" name="atributos">- Tag Input e Seus Tipos</h3>
+
+        <mark class="caption">name</mark>
+        <p>
+            É um atributo para nomear a tag e fazer sua indentificação, com isso é possível
+            através do <i>JavaScript</i> fazer uma validação dos dados nos campos que foram
+            inseridos. É necessário para encontrar a instância do formulário
+        </p>
+
+        <form id="exemploform" name="Exemplo" target="" method=" POST" action="#">
             Nome: <input type="text" name="name" /><br>
             Idade: <input type="number" name="age" /><br>
             Senha: <input type="password" name="password" /><br>
             <button type="submit">Salvar</button>
         </form> <br>
 
-        <a class="back" href="index.html">< voltar</a>
+        <a class="back" title="Voltar para a página principal" href="index.html">< voltar</a>
 
         <button class="back">
             <a class="back" href="index.html">< voltar</a>
