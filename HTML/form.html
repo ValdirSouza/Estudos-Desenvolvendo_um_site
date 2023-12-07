@@ -14,10 +14,11 @@
         <p>
             Formulário serve para preenchimento de informações e praticamente trabalha junto com
             o servidor, para onde é enviado e processado esses dados. <br>
-            Ele é declarado pela tag <a href="form.html#exemploform"><i>form</i></a>, que é composta por 
+            Ele é declarado pela tag <a href="form.html#exemploform">form</a>, que é composta por 
             <a href="form.html#back">atributos</a> para configurações e
             <a href="form.html#inputetipos">inputs</a> para compor sua estruta de entrada de
-            informações.
+            informações com os tipos de entradas de dados que que cada campo irá aceitar de acordo
+            com o que for configurado.
         </p>
         
         <h3 class="title3" id="atributos" name="atributos">- Atributos</h3>
@@ -67,24 +68,48 @@
 
         <h3 class="title3" id="inputetipos" name="atributos">- Tag Input e Seus Tipos</h3>
 
+        <mark class="caption">button</mark>
+        <p></p>
+        <mark class="caption">checkbox</mark>
+        <p></p>
+        <mark class="caption">color</mark>
+        <p></p>
+        <mark class="caption">date</mark>
+        <p></p>
+        <mark class="caption">email</mark>
+        <p></p>
+        <mark class="caption">file</mark>
+        <p>multiple</p>
+        <mark class="caption">hidden</mark>
+        <p></p>
         <mark class="caption">name</mark>
-        <p>
-            É um atributo para nomear a tag e fazer sua indentificação, com isso é possível
-            através do <i>JavaScript</i> fazer uma validação dos dados nos campos que foram
-            inseridos. É necessário para encontrar a instância do formulário
-        </p>
+        <p></p>
+        <mark class="caption">number</mark>
+        <p></p>
+        <mark class="caption">password</mark>
+        <p></p>
+        <mark class="caption">range</mark>
+        <p></p>
+        <mark class="caption">submit</mark>
+        <p></p>
+        <mark class="caption">text</mark>
+        <p></p>
+        <mark class="caption">url</mark>
+        <p></p>
+        <mark class="caption">week</mark>
+        <p></p>
 
-        <form id="exemploform" name="Exemplo" target="" method=" POST" action="#">
+        <form id="exemploform" name="Exemplo" target="" method="post" action="#">
+            <h4 class="title4">Exemplo de Formulário:</h4>
             Nome: <input type="text" name="name" /><br>
             Idade: <input type="number" name="age" /><br>
             Senha: <input type="password" name="password" /><br>
-            <button type="submit">Salvar</button>
+            <button type="submit" disabled>Salvar</button>
         </form> <br>
 
-        <a class="back" title="Voltar para a página principal" href="index.html">< voltar</a>
-
-        <button class="back">
+        <button class="back" title="Voltar para a página principal">
             <a class="back" href="index.html">< voltar</a>
         </button>
+
     </body>
 </html>
