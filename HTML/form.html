@@ -22,34 +22,11 @@
         </p>
         
         <h3 class="title3" id="atributos" name="atributos">- Atributos</h3>
-
-        <mark class="caption">name</mark>
+        <mark class="caption">action</mark>
         <p>
-            É um atributo para nomear a tag e fazer sua indentificação, com isso é possível
-            através do <i>JavaScript</i> fazer uma validação dos dados nos campos que foram
-            inseridos. É necessário para encontrar a instância do formulário
+            Este atributo é para direcionar para onde as informações do formulário iram, pode ser
+            para o endereço do servidor ou uma página web, URL. 
         </p>
-        <mark class="caption">method</mark>
-        <p>
-            Essa atributo possui o método <i>GET</i> e <i>POST</i>:
-        </p>
-        <ul>
-            <li>
-                No método <i>GET</i> irar coleta as informações preenchidas no formulário e
-                envia-lás na propria URL do site, isso é perigoso devido ao risco de está enviando
-                dados que são importantes, como senhas, documentos de indentificação e etc.
-            </li>
-            <li>
-                No método <i>POST</i> as informações são capsuladas e enviadas para o link que é
-                atribuido para a tag <i>action</i>.
-            </li>
-        </ul>
-
-        <mark class="caption">target</mark>
-        <p>
-            Este atributo está explicado na página sobre <a href="links.html">links</a>
-        </p>
-
         <mark class="caption" >autocomplete</mark>
         <p>
             Este atributo possui os valores <i>on</i> e <i>off</i>, onde <strong>on</strong>
@@ -58,23 +35,66 @@
             Por padrão ele já é desabilitado, assim não mantendo as informações que foram
             digitadas pré salvas
         </p>
+        <mark class="caption">method</mark>
+        <p>
+            Essa atributo possui o método <i>GET</i> e <i>POST</i>:
+            <ul>
+                <li>
+                    No método <i>GET</i> irar coleta as informações preenchidas no formulário e
+                    envia-lás na propria URL do site, isso é perigoso devido ao risco de está enviando
+                    dados que são importantes, como senhas, documentos de indentificação e etc.
+                </li>
+                <li>
+                    No método <i>POST</i> as informações são capsuladas e enviadas para o link que é
+                    atribuido para a tag <i>action</i>.
+                </li>
+            </ul>
+        </p>
+        <mark class="caption">name</mark>
+        <p>
+            É um atributo para nomear a tag e fazer sua indentificação, com isso é possível
+            através do <i>JavaScript</i> fazer uma validação dos dados nos campos que foram
+            inseridos. É necessário para encontrar a instância do formulário.
+        </p>
+        <mark class="caption">target</mark>
+        <p>
+            Este atributo está explicado na página sobre <a href="links.html">links</a>
+        </p>
 
         <h3 class="title3" id="inputetipos" name="atributos">- Tag Input e Seus Tipos</h3>
 
         <mark class="caption">button</mark>
         <p>
-            Para a tag input o tipo <i>button</i> ele cria um botão na página que podem ser
-            atribuídos eventos e ser programados para controlar funcionalidades customizadas em
-            qualquer lugar de uma página web
+            O tipo <i>button</i> ele cria um botão na página que podem ser atribuídos eventos e
+            serem programados para controlar funcionalidades customizadas em qualquer lugar de
+            uma página web.
         </p>
         <mark class="caption">checkbox</mark>
-        <p></p>
+        <p>
+
+        </p>
         <mark class="caption">color</mark>
-        <p></p>
+        <p>
+            O tipo <i>color</i> é um campo do tipo cor, ele disponibiliza um botão onde ao clicar
+            irá abrir uma caixa de diálogo<sup>*</sup> de cor, permitindo selecionar a cor que
+            o usuário desejar.<br>
+        </p>
         <mark class="caption">date</mark>
-        <p></p>
+        <p>
+            O tipo <i>date</i> é um campo do tipo data que possibilita a digitação no formato de
+            datas e disponibiliza dentro do campo de digitação um botão no canto que ao clicar nele
+            abre uma caixa de diálogo<sup>*</sup> do tipo calendário com a opção de fazer a
+            escolha da data. 
+        </p>
         <mark class="caption">email</mark>
-        <p></p>
+        <p>
+            O tipo <i>email</i> é um campo do tipo e-mail, neste campo os próprios navegadores já
+            possuem um tipo de validação que é pradrão deles, solicitando a necessidade de ter um
+            modelo de endereço correto. Porém neste tipo de campo existe a possibilidade de enviar
+            o formúlario com o campo vazio que não irá gerar nenhum tipo de alerta, mas se o
+            possuir algum texto, ou seja, possível endereço de e-mail que não contenha o "@", irá
+            gerar um alerta solicitando esse complemento.
+        </p>
         <mark class="caption">file</mark>
         <p>multiple</p>
         <mark class="caption">hidden</mark>
@@ -82,28 +102,62 @@
         <mark class="caption">name</mark>
         <p></p>
         <mark class="caption">month</mark>
-        <p></p>
+        <p>
+            O tipo <i>month</i> é um campo do tipo mês e ano que possibilita a digitação no
+            formato padrão de mês e ano e disponibiliza dentro do campo de digitação um botão no
+            canto que ao clicar nele abre uma caixa de diálogo<sup>*</sup> do tipo calendário com
+            a opção de fazer a escolha da data que o usuário desejar. 
+        </p>
         <mark class="caption">number</mark>
-        <p></p>
+        <p>
+            O tipo <i>number</i> é um campo do tipo númerico e que aceita tanto números inteiros,
+            decimais e equações literais. Exemplo o "e".<br>
+            Este tipo de entrada tem a parcularidade de conseguir fixar qual o valor padrão, mínimo,
+            máximo e de quanto em quanto ele acrescenta o valor, usando respectivamente o atributos
+            <i>value</i>, <i>min</i>, <i>max</i> e o <i>step</i> com valores numéricos como
+            parametros.
+        </p>
         <mark class="caption">password</mark>
-        <p></p>
+        <p>
+            O tipo <i>password</i> é um campo do tipo senha, que oculta qualquer texto, número ou
+            caracter especial que for digitado nele. Isso é um meio de segurança para prevenir
+            falhas e possibilita a privacidade do usuário.
+        </p>
         <mark class="caption">range</mark>
-        <p></p>
+        <p>
+            O tipo <i>range</i> é um campo do tipo ranger, onde possui uma barra que é possível
+            ajustar para escolher o valor a ser escolhido.<br>
+            Assim como no tipo number, ela possui a particularidade de usar atributos para setar
+            parãmetros.
+        </p>
         <mark class="caption">search</mark>
         <p></p>
         <mark class="caption">submit</mark>
         <p></p>
         <mark class="caption">text</mark>
-        <p></p>
+        <p>
+            O tipo <i>text</i> é um campo do tipo texto que aceita letras, números e caracteres
+            especiais.
+        </p>
         <mark class="caption">url</mark>
         <p></p>
         <mark class="caption">week</mark>
-        <p></p>
+        <p>
+            O tipo <i>week</i> é um campo do tipo número da semana que possibilita a digitação no
+            formato padrão de número da semana do ano e disponibiliza dentro do campo de digitação
+            um botão no canto que ao clicar nele abre uma caixa de diálogo<sup>*</sup> do tipo
+            calendário com a opção de fazer a escolha do número da semana da data que o usuário
+            desejar. 
+        </p>
+
+        <blockquote>
+            <i>*Obs.: Cada navegador implementa um tipo de caixa de diálogo diferente.</i>
+        </blockquote>
 
         <form id="exemploform" name="Exemplo" target="" method="post" action="#">
             <h4 class="title4">Exemplo de Formulário:</h4>
             Nome: <input type="text" name="name" /><br>
-            Idade: <input type="number" name="age" /><br>
+            Idade: <input type="month" name="age"/><br>
             Senha: <input type="password" name="password" /><br>
             <button type="submit" disabled>Salvar</button>
         </form> <br>
