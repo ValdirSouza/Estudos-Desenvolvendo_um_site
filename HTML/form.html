@@ -140,7 +140,21 @@
             especiais.
         </p>
         <mark class="caption">url</mark>
-        <p></p>
+        <p>
+            O tipo <i>url</i> é um campo do tipo url que significa <i>Uniform Resource Locator</i>,
+            ou mais conhecido como links, esse campo aceita o preenchimento do endereço do link
+            apenas por completo, caso esteja faltando alguma informação básica no momento em que for
+            salvar o formulário clicando no botão de salvar ou enviar os dados que foram
+            preenchidos ele irá aparecer uma caixa de diálogo solicitando o prechimento correto.<br>
+            A abaixo tem as informaçóes e os significados dos campos que são composto por uma url
+            completa, além de informar quais campos são obrigatórios:
+            <ul>
+                <li>https://</li> Protocolo - <i>obrigatório</i>
+                <li>www.</li> Sub domínio - <i>obrigatório</i>
+                <li>google.com</li> Nome do domínio  - <i>obrigatório</i>
+                <li>/pesquisas</li> Pasta ou página que será acessado
+            </ul>
+        </p>
         <mark class="caption">week</mark>
         <p>
             O tipo <i>week</i> é um campo do tipo número da semana que possibilita a digitação no
@@ -157,9 +171,9 @@
         <form id="exemploform" name="Exemplo" target="" method="post" action="#">
             <h4 class="title4">Exemplo de Formulário:</h4>
             Nome: <input type="text" name="name" /><br>
-            Idade: <input type="month" name="age"/><br>
+            Idade: <input type="url" name="age"/><br>
             Senha: <input type="password" name="password" /><br>
-            <button type="submit" disabled>Salvar</button>
+            <button type="submit" </button>>Salvar</button>
         </form> <br>
 
         <button class="back" title="Voltar para a página principal">
