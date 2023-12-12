@@ -71,20 +71,24 @@
         </p>
         <mark class="caption">checkbox</mark>
         <p>
-
+            O tipo <i>checkbox</i> é um campo do tipo caixa de seleção, que é permitido selecionar
+            várias opções.<br>
+            Para garantir que o servidor receba todas as informações selecionadas, é importante que
+            que os valores do atributo <i>name</i> seja todos os mesmos nomes e que tenha no final do
+            nome escolhido, os "[]", assim irá garantir que todas as respostas selecionadas sejam
+            enviadas para serem processadas.
         </p>
         <mark class="caption">color</mark>
         <p>
             O tipo <i>color</i> é um campo do tipo cor, ele disponibiliza um botão onde ao clicar
-            irá abrir uma caixa de diálogo<sup>*</sup> de cor, permitindo selecionar a cor que
-            o usuário desejar.<br>
+            irá abrir uma caixa de diálogo<sup>*</sup> de cor, permitindo selecionar a cor que o
+            usuário desejar.<br>
         </p>
         <mark class="caption">date</mark>
         <p>
             O tipo <i>date</i> é um campo do tipo data que possibilita a digitação no formato de
             datas e disponibiliza dentro do campo de digitação um botão no canto que ao clicar nele
-            abre uma caixa de diálogo<sup>*</sup> do tipo calendário com a opção de fazer a
-            escolha da data. 
+            abre uma caixa de diálogo<sup>*</sup> do tipo calendário com a opção de escolher a data.
         </p>
         <mark class="caption">email</mark>
         <p>
@@ -113,9 +117,9 @@
             O tipo <i>number</i> é um campo do tipo númerico e que aceita tanto números inteiros,
             decimais e equações literais. Exemplo o "e".<br>
             Este tipo de entrada tem a parcularidade de conseguir fixar qual o valor padrão, mínimo,
-            máximo e de quanto em quanto ele acrescenta o valor, usando respectivamente o atributos
-            <i>value</i>, <i>min</i>, <i>max</i> e o <i>step</i> com valores numéricos como
-            parametros.
+            máximo e de quanto em quanto ele acrescenta ou decrescenta o valor, usando
+            respectivamente o atributos <i>value</i>, <i>min</i>, <i>max</i> e o <i>step</i> com
+            valores numéricos como parametros.
         </p>
         <mark class="caption">password</mark>
         <p>
@@ -123,12 +127,20 @@
             caracter especial que for digitado nele. Isso é um meio de segurança para prevenir
             falhas e possibilita a privacidade do usuário.
         </p>
+        <mark class="caption">radio</mark>
+        <p>
+            O tipo <i>radio</i> é um campo do tipo rádio, ele é uma opção de selecionar apenas uma
+            ou outro opção.<br>
+            Para garantir o funcionamento correto, os atributos <i>name</i> de cada <i>input</i>
+            deve esta com os valores de todos os com os mesmos nomes, assim irá garantir que 
+            apenas um dos botões de opções seja selecionado.
+        </p>
         <mark class="caption">range</mark>
         <p>
             O tipo <i>range</i> é um campo do tipo ranger, onde possui uma barra que é possível
             ajustar para escolher o valor a ser escolhido.<br>
             Assim como no tipo number, ela possui a particularidade de usar atributos para setar
-            parãmetros.
+            parâmetros.
         </p>
         <mark class="caption">search</mark>
         <p></p>
@@ -145,18 +157,16 @@
             ou mais conhecido como links, esse campo aceita o preenchimento do endereço do link
             apenas por completo, caso esteja faltando alguma informação básica no momento em que for
             salvar o formulário clicando no botão de salvar ou enviar os dados que foram
-            preenchidos ele irá aparecer uma caixa de diálogo solicitando o prechimento correto.<br>
+            preenchidos ele irá aparecer uma caixa de diálogo<sup>*</sup> solicitando o prechimento
+            correto.<br>
             A abaixo tem as informaçóes e os significados dos campos que são composto por uma url
             completa, além de informar quais campos são obrigatórios:
             <ul>
-                <li>https://</li> Protocolo<sup>*</sup>
-                <li>www.</li> Sub domínio<sup>*</sup>
-                <li>google.com</li> Nome do domínio<sup>*</sup> 
+                <li>https://</li> Protocolo<sup>**</sup>
+                <li>www.</li> Sub domínio<sup>**</sup>
+                <li>google.com</li> Nome do domínio<sup>**</sup> 
                 <li>/pesquisas</li> Pasta ou página que será acessado
             </ul>
-            <blockquote>
-                <sup>*</sup>- Campos obrigatórios
-            </blockquote>
         </p>
         <mark class="caption">week</mark>
         <p>
@@ -165,20 +175,38 @@
             um botão no canto que ao clicar nele abre uma caixa de diálogo<sup>*</sup> do tipo
             calendário com a opção de fazer a escolha do número da semana da data que o usuário
             desejar. 
-        </p>
+        </p><br>
 
         <blockquote>
-            <i>*Obs.: Cada navegador implementa um tipo de caixa de diálogo diferente.</i>
+            <i><sup>*</sup>- Cada navegador implementa um tipo de caixa de diálogo diferente.</i><br>
+            <i><sup>**</sup>- Campos obrigatórios</i>
         </blockquote>
 
         <form id="exemploform" name="Exemplo" target="" method="post" action="#">
             <h4 class="title4">Exemplo de Formulário:</h4>
-            Nome: <input type="text" name="name" /><br>
-            Idade: <input type="url" name="age"/><br>
-            Senha: <input type="password" name="password" /><br>
-            <button type="submit" </button>>Salvar</button>
+            <label>Nome:</label> <input type="text" name="name" /><br>
+            <label>Idade:</label> <input type="url" name="age"/><br>
+            <label>Senha:</label> <input type="password" name="password" /><br>
+            <button type="submit">Salvar</button>
         </form> <br>
-
+        <form id="exemplochecbox" name="exemplochecbox" method="get">
+            <h4 class="title4">Exemplo de Caixa de seleção:</h4>
+            <p>Selecione quantas opções desejar:</p>
+            <input type="checkbox" name="options[]" value="opt1" />opção1<br>
+            <input type="checkbox" name="options[]" value="opt2" />opção2<br>
+            <input type="checkbox" name="options[]" value="opt3" />opção3<br>
+            <input type="checkbox" name="options[]" value="opt4" />opção4<br>
+            <button type="submit">Salvar</button>
+        </form>
+        <form id="exemploradio" name="exemploradio" method="get">
+            <h4 class="title4">Exemplo de seleção única:</h4>
+            <p>Selecione quantas opções desejar:</p>
+            <input type="radio" name="options" value="opt1" />opção1<br>
+            <input type="radio" name="options" value="opt2" />opção2<br>
+            <input type="radio" name="options" value="opt3" />opção3<br>
+            <input type="radio" name="options" value="opt4" />opção4<br>
+            <button type="submit">Salvar</button>
+        </form>
         <button class="back" title="Voltar para a página principal">
             <a class="back" href="index.html">< voltar</a>
         </button>
