@@ -67,7 +67,21 @@
         <p>
             O tipo <i>button</i> ele cria um botão na página que podem ser atribuídos eventos e
             serem programados para controlar funcionalidades customizadas em qualquer lugar de
-            uma página web.
+            uma página web.<br>
+            Ideal quando tiver formulário que tenha um botão <i>submit</i> no formulário e que a
+            ação dele seja acompanhado de eventos, que esses eventos estejam implementados no
+            cabeçalho da tag.<br>
+            Os tipos de botões dentro de um formulário atribuido valores para o "type" são:
+            <ul>
+                <li>button</li>
+                Apenas configurado como botão clicável, não tem uma ação pré definida. Para executar
+                algum tipo de ação, deve-se configurar os eventos aplicando JavaScript nele.
+                <li>reset</li>
+                Com está configuração ele básicamente limpa os valores dos campos do formulário ao
+                clicar nele, mas apenas do <i>Form</i> que ele estiver dentro.
+                <li>submit</li>
+                Está configuração é submitar as informações, finalizar, enviar essas informações.
+            </ul>
         </p>
         <mark class="caption">checkbox</mark>
         <p>
@@ -206,7 +220,8 @@
             <input type="radio" name="options" value="opt3" />opção3<br>
             <input type="radio" name="options" value="opt4" />opção4<br>
             <button type="submit">Salvar</button>
-        </form>
+        </form><br>
+
         <button class="back" title="Voltar para a página principal">
             <a class="back" href="index.html">< voltar</a>
         </button>
