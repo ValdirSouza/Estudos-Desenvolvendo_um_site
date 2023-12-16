@@ -15,9 +15,9 @@
             Formulário serve para preenchimento de informações e praticamente trabalha junto com
             o servidor, para onde é enviado e processado esses dados. <br>
             Ele é declarado pela tag <a href="form.html#exemploform">form</a>, que é composta por 
-            <a href="form.html#back">atributos</a> para configurações e
+            <a href="form.html#atributos">atributos</a> para configurações e
             <a href="form.html#inputetipos">inputs</a> para compor sua estruta de entrada de
-            informações com os tipos de entradas de dados que que cada campo irá aceitar de acordo
+            informações com os tipos de entradas de dados que cada campo irá aceitar de acordo
             com o que for configurado.
         </p>
         
@@ -74,11 +74,11 @@
             Os tipos de botões dentro de um formulário atribuido valores para o "type" são:
             <ul>
                 <li>button</li>
-                Apenas configurado como botão clicável, não tem uma ação pré definida. Para executar
+                Apenas configura como um botão clicável, não tem uma ação pré definida. Para executar
                 algum tipo de ação, deve-se configurar os eventos aplicando JavaScript nele.
                 <li>reset</li>
                 Com está configuração ele básicamente limpa os valores dos campos do formulário ao
-                clicar nele, mas apenas do <i>Form</i> que ele estiver dentro.
+                clicar nele, mas apenas do <i>Form</i> que ele estiver dentro da estrutura.
                 <li>submit</li>
                 Está configuração é submitar as informações, finalizar, enviar essas informações.
             </ul>
@@ -89,7 +89,7 @@
             várias opções.<br>
             Para garantir que o servidor receba todas as informações selecionadas, é importante que
             que os valores do atributo <i>name</i> seja todos os mesmos nomes e que tenha no final do
-            nome escolhido, os "[]", assim irá garantir que todas as respostas selecionadas sejam
+            nome escolhido o símbolo colchetes "[ ]", assim irá garantir que todas as respostas selecionadas sejam
             enviadas para serem processadas.
         </p>
         <mark class="caption">color</mark>
@@ -151,8 +151,8 @@
         </p>
         <mark class="caption">range</mark>
         <p>
-            O tipo <i>range</i> é um campo do tipo ranger, onde possui uma barra que é possível
-            ajustar para escolher o valor a ser escolhido.<br>
+            O tipo <i>range</i> é um campo do tipo faixa ajustavél, onde possui uma barra que
+            possibilita ajustar para selecionar o valor a desejável.<br>
             Assim como no tipo number, ela possui a particularidade de usar atributos para setar
             parâmetros.
         </p>
@@ -160,6 +160,10 @@
         <p></p>
         <mark class="caption">submit</mark>
         <p></p>
+        <mark class="caption">select box</mark>
+        <p>
+
+        </p>
         <mark class="caption">text</mark>
         <p>
             O tipo <i>text</i> é um campo do tipo texto que aceita letras, números e caracteres
@@ -202,7 +206,7 @@
             <label>Idade:</label> <input type="url" name="age"/><br>
             <label>Senha:</label> <input type="password" name="password" /><br>
             <button type="submit">Salvar</button>
-        </form> <br>
+        </form>
         <form id="exemplochecbox" name="exemplochecbox" method="get">
             <h4 class="title4">Exemplo de Caixa de seleção:</h4>
             <p>Selecione quantas opções desejar:</p>
@@ -220,6 +224,17 @@
             <input type="radio" name="options" value="opt3" />opção3<br>
             <input type="radio" name="options" value="opt4" />opção4<br>
             <button type="submit">Salvar</button>
+        </form> <br>
+        <form id="exemploselectbox" name="exemploselectbox" method="get">
+            <h4 class="title4">Exemplo de caixa de seleção:</h4>
+            <label>Cargo:</label>
+            <select name="role">
+                <option value="gerente">Gerente</option>
+                <option value="diretor">Diretor</option>
+                <option value="presidente">Presidente</option>
+                <option value="supervisor">Supervisor</option>
+                <option selected value="">Selecione o cargo</option>
+            </select>
         </form><br>
 
         <button class="back" title="Voltar para a página principal">
