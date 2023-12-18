@@ -68,7 +68,7 @@
             O tipo <i>button</i> ele cria um botão na página que podem ser atribuídos eventos e
             serem programados para controlar funcionalidades customizadas em qualquer lugar de
             uma página web.<br>
-            Ideal quando tiver formulário que tenha um botão <i>submit</i> no formulário e que a
+            O ideal é que quando tiver um formulário que tenha um botão <i>submit</i> e que a
             ação dele seja acompanhado de eventos, que esses eventos estejam implementados no
             cabeçalho da tag.<br>
             Os tipos de botões dentro de um formulário atribuido valores para o "type" são:
@@ -160,9 +160,18 @@
         <p></p>
         <mark class="caption">submit</mark>
         <p></p>
-        <mark class="caption">select box</mark>
+        <mark class="caption">selectbox</mark>
         <p>
-
+            O tipo <i>selectbox</i> é um campo do tipo caixa de seleção, basicamente é uma lista
+            pré definida dos valores que o usuário pode escolhar, matendo padrões definidos e
+            evitando a  necessidade ou possibilidade de digitar algum dado para ser enviado.<br>
+            Para configurar as opções que o usuário terá disponível para selecionar no selectbox
+            deve-se usar a tag <i>option</i> dentro da estrutura de informações da tag
+            <i>select</i>. Está tag envia o valor que estiver descrito no atribulo <i>value</i> e
+            apresenta para o usuário o valor que está descrito no corpo da estrutura.<br>
+            Caso seja necessário um tipo de selectbox que o usuário possa selecionar várias opções,
+            existe a tag <i>multiple</i> que possibilita essa opção, basta está incluindo ela no
+            cabeçalho da tag <i>select</i>. 
         </p>
         <mark class="caption">text</mark>
         <p>
@@ -227,13 +236,20 @@
         </form> <br>
         <form id="exemploselectbox" name="exemploselectbox" method="get">
             <h4 class="title4">Exemplo de caixa de seleção:</h4>
-            <label>Cargo:</label>
+            <label>Seleção multipla:</label>
             <select name="role">
                 <option value="gerente">Gerente</option>
                 <option value="diretor">Diretor</option>
                 <option value="presidente">Presidente</option>
                 <option value="supervisor">Supervisor</option>
                 <option selected value="">Selecione o cargo</option>
+            </select><br>
+            <label>Seleção simples:</label>
+            <select name="role" multiple>
+                <option value="opção1">Gerente</option>
+                <option value="opção2">Diretor</option>
+                <option value="opção3">Presidente</option>
+                <option value="opção4">Supervisor</option>
             </select>
         </form><br>
 
