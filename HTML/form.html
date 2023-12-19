@@ -143,11 +143,11 @@
         </p>
         <mark class="caption">radio</mark>
         <p>
-            O tipo <i>radio</i> é um campo do tipo rádio, ele é uma opção de selecionar apenas uma
-            ou outro opção.<br>
+            O tipo <i>radio</i> é um campo do tipo rádio, resumindo melhor, é um campo de seleção de
+            opções. Este tipo de campo permite escolher apenas uma opção dentre as disponíveis.<br>
             Para garantir o funcionamento correto, os atributos <i>name</i> de cada <i>input</i>
-            deve esta com os valores de todos os com os mesmos nomes, assim irá garantir que 
-            apenas um dos botões de opções seja selecionado.
+            devem estar com os seus valores identicos entre eles, assim irá garantir que apenas um
+            dos botões de opções seja selecionado.
         </p>
         <mark class="caption">range</mark>
         <p>
@@ -177,6 +177,19 @@
         <p>
             O tipo <i>text</i> é um campo do tipo texto que aceita letras, números e caracteres
             especiais.
+        </p>
+        <mark class="caption">textarea</mark>
+        <p>
+            O tipo <i>textarea</i> é um campo do tipo texto que aceita letras, números e caracteres
+            especiais. A diferença dele para o <i>text</i> é que ele é um campo que não depende da
+            tag <i>input</i> para ser estruturado e por padrão ele é maior do que os demais campos,
+            próprio para inserir mais informações e possui opção de redimensionar a área de
+            digitação. Se caso o layout não permite que o usuário fique redimensionando o tamanho
+            da área de digitação, é possível através do CSS travar o tamanho da área.<br>
+            Algo importante é que o tamanho padrão da área de digitação, pode ser alterado,
+            sendo definindo através dos atributos <i>rows</i> e <i>cols</i>, que é o tamanho da 
+            altura e largura, respectivamente, sendo a altura a quantidade de linhas e largura a
+            quantidade colunas.
         </p>
         <mark class="caption">url</mark>
         <p>
@@ -214,6 +227,8 @@
             <label>Nome:</label> <input type="text" name="name" /><br>
             <label>Idade:</label> <input type="url" name="age"/><br>
             <label>Senha:</label> <input type="password" name="password" /><br>
+            <label>Descrição pessoal:</label>
+                <textarea name="message" id="message" cols="25" rows="3"></textarea>
             <button type="submit">Salvar</button>
         </form>
         <form id="exemplochecbox" name="exemplochecbox" method="get">
