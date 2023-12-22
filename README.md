@@ -10,4 +10,5 @@ ___
 [Digital Inovation One](https://web.dio.me/play?section_type=course&skill=af94e086-7222-4626-bf21-b7d8ebecdbfd)  
 [MDN Web Docs](https://developer.mozilla.org/pt-BR/docs/Web/HTML)  
 [FlatIcon](https://www.flaticon.com/br/)  
+[Icons8](https://icons8.com.br/)  
 [Hostinger Tutoriais](https://www.hostinger.com.br/tutoriais/url#HTTP_ou_HTTPS)  
