@@ -42,12 +42,13 @@
             <ul>
                 <li>
                     No método <i>GET</i> irar coleta as informações preenchidas no formulário e
-                    envia-lás na propria URL do site, isso é perigoso devido ao risco de está enviando
-                    dados que são importantes, como senhas, documentos de indentificação e etc.
+                    envia-lás na propria URL do site, isso é perigoso devido ao risco de está
+                    enviando dados que são importantes, como senhas, documentos de indentificação
+                    e etc.
                 </li>
                 <li>
-                    No método <i>POST</i> as informações são capsuladas e enviadas para o link que é
-                    atribuido para a tag <i>action</i>.
+                    No método <i>POST</i> as informações são capsuladas e enviadas para o link que
+                    é atribuido para a tag <i>action</i>.
                 </li>
             </ul>
         </p>
@@ -75,8 +76,9 @@
             Os tipos de botões dentro de um formulário atribuido valores para o "type" são:
             <ul>
                 <li>button</li>
-                Apenas configura como um botão clicável, não tem uma ação pré definida. Para executar
-                algum tipo de ação, deve-se configurar os eventos aplicando JavaScript nele.
+                Apenas configura como um botão clicável, não tem uma ação pré definida. Para
+                executar algum tipo de ação, deve-se configurar os eventos aplicando JavaScript
+                nele.
                 <li>reset</li>
                 Com está configuração ele básicamente limpa os valores dos campos do formulário ao
                 clicar nele, mas apenas do <i>Form</i> que ele estiver dentro da estrutura.
@@ -88,9 +90,9 @@
         <p>
             O tipo <i>checkbox</i> é um campo do tipo caixa de seleção, que é permitido selecionar
             várias opções.<br>
-            Para garantir que o servidor receba todas as informações selecionadas, é importante que
-            que os valores do atributo <i>name</i> seja todos os mesmos nomes e que tenha no final do
-            nome escolhido o símbolo colchetes "[ ]", assim irá garantir que todas as respostas
+            Para garantir que o servidor receba todas as informações selecionadas, é importante
+            que os valores do atributo <i>name</i> seja todos os mesmos nomes e que tenha no final
+            do nome escolhido o símbolo colchetes "[ ]", assim irá garantir que todas as respostas
             selecionadas sejam enviadas para serem processadas.
         </p>
         <mark class="caption">color</mark>
@@ -102,8 +104,9 @@
         <mark class="caption">date</mark>
         <p>
             O tipo <i>date</i> é um campo do tipo data que possibilita a digitação no formato de
-            datas e disponibiliza dentro do campo de digitação um botão no canto que ao clicar nele
-            abre uma caixa de diálogo<sup>*</sup> do tipo calendário com a opção de escolher a data.
+            datas e disponibiliza dentro do campo de digitação um botão no canto que ao clicar
+            nele abre uma caixa de diálogo<sup>*</sup> do tipo calendário com a opção de escolher
+            a data.
         </p>
         <mark class="caption">email</mark>
         <p>
@@ -131,8 +134,8 @@
         <p>
             O tipo <i>number</i> é um campo do tipo númerico e que aceita tanto números inteiros,
             decimais e equações literais. Exemplo o "e".<br>
-            Este tipo de entrada tem a parcularidade de conseguir fixar qual o valor padrão, mínimo,
-            máximo e de quanto em quanto ele acrescenta ou decrescenta o valor, usando
+            Este tipo de entrada tem a parcularidade de conseguir fixar qual o valor padrão,
+            mínimo, máximo e de quanto em quanto ele acrescenta ou decrescenta o valor, usando
             respectivamente o atributos <i>value</i>, <i>min</i>, <i>max</i> e o <i>step</i> com
             valores numéricos como parametros.
         </p>
@@ -144,11 +147,12 @@
         </p>
         <mark class="caption">radio</mark>
         <p>
-            O tipo <i>radio</i> é um campo do tipo rádio, resumindo melhor, é um campo de seleção de
-            opções. Este tipo de campo permite escolher apenas uma opção dentre as disponíveis.<br>
+            O tipo <i>radio</i> é um campo do tipo rádio, resumindo melhor, é um campo de seleção
+            de opções. Este tipo de campo permite escolher apenas uma opção dentre as
+            disponíveis.<br>
             Para garantir o funcionamento correto, os atributos <i>name</i> de cada <i>input</i>
-            devem estar com os seus valores identicos entre eles, assim irá garantir que apenas um
-            dos botões de opções seja selecionado.
+            devem estar com os seus valores identicos entre eles, assim irá garantir que apenas
+            um dos botões de opções seja selecionado.
         </p>
         <mark class="caption">range</mark>
         <p>
@@ -170,9 +174,9 @@
             deve-se usar a tag <i>option</i> dentro da estrutura de informações da tag
             <i>select</i>. Está tag envia o valor que estiver descrito no atribulo <i>value</i> e
             apresenta para o usuário o valor que está descrito no corpo da estrutura.<br>
-            Caso seja necessário um tipo de selectbox que o usuário possa selecionar várias opções,
-            existe a tag <i>multiple</i> que possibilita essa opção, basta está incluindo ela no
-            cabeçalho da tag <i>select</i>. 
+            Caso seja necessário um tipo de selectbox que o usuário possa selecionar várias
+            opções, existe a tag <i>multiple</i> que possibilita essa opção, basta está incluindo
+            ela no cabeçalho da tag <i>select</i>. 
         </p>
         <mark class="caption">text</mark>
         <p>
@@ -196,8 +200,8 @@
         <p>
             O tipo <i>url</i> é um campo do tipo url que significa <i>Uniform Resource Locator</i>,
             ou mais conhecido como links, esse campo aceita o preenchimento do endereço do link
-            apenas por completo, caso esteja faltando alguma informação básica no momento em que for
-            salvar o formulário clicando no botão de salvar ou enviar os dados que foram
+            apenas por completo, caso esteja faltando alguma informação básica no momento em que
+            for salvar o formulário clicando no botão de salvar ou enviar os dados que foram
             preenchidos ele irá aparecer uma caixa de diálogo<sup>*</sup> solicitando o prechimento
             correto.<br>
             A abaixo tem as informaçóes e os significados dos campos que são composto por uma url
