@@ -3,14 +3,20 @@
     font-weight: bold;
 }
 .title2 {
-    color: blue;
+    color: rgb(0, 0, 255);
 }
 .title3 {
     color: rgb(17, 142, 134);
 }
 .title4 {
-    color: dodgerblue;
+    color: rgb(30, 144, 255);
 }
 .caption {
     background-color: rgba(227, 224, 224, 0.986);
+}
+.tagcolor {
+    color: rgb(0, 0, 205);
+}
+.tagname {
+    color: rgb(165, 42, 42);
 }
