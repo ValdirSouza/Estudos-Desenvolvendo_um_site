@@ -34,11 +34,14 @@
 
         <h3 class="title3">- Listas não ordenadas</h3>
         <p>
-            A Tag <strong>"ul"</strong> é para definer uma estrutura de listas não ordenada <br>
-            A Tag <strong>"li"</strong> irá definer os itens da lista. <br>
-            Esse tipo de lista pode ter uma estrutura de listas dentro de outras. <br>
-            É definida como <i>lista não ordenada</i>, pois os itens terão marcadores do tipo simbolos pré-definidos. <br>
-            Os marcadores podendo ser removidos ou trocados mudando o <i>"list-style-type"</i>. <br>
+            A Tag <code class="codespan">&lt;ul&gt;</code> é para definer uma estrutura de listas não
+            ordenada e a <code class="codespan">&lt;li&gt;</code> irá definer os itens da lista. <br>
+            Esse tipo de lista permite ter uma estrutura de listas dentro de outras. É definida como
+            <i>lista não ordenada</i>, pois os itens terão marcadores do tipo simbolos que sáo
+            pré-definidos, mas os marcadores podem ser removidos ou trocados mudando o valor do
+            atributo <i>style</i> dando o valor para ele de <i>"list-style-type:"</i> e acrescentando
+            "none", "circle", "georgian", erc. Isso pode ser feito para toda lista ou apenas um item
+            da lista ao qual desejar.<br>
             Como por exemplo.:
         </p>
         <ul>
@@ -50,10 +53,10 @@
                     <li>3.2 lista
                         <ul>
                             <li>3.2.1 lista
-                                <ul>
+                                <ul style="list-style-type:none;">
                                     <li>3.2.1.1 lista</li>
                                     <li>3.2.1.2 lista
-                                        <ul style="list-style-type:none;">
+                                        <ul>
                                             <li>3.2.1.2.1 lista</li>
                                         </ul>
                                     </li>
@@ -71,10 +74,12 @@
         
         <h3 class="title3">- Listas ordenadas</h3>
         <p>
-            A <i>Tag</i> <strong>"ol"</strong> é para definer uma estrutura de listas ordenada. <br>
-            A <i>Tag</i> <strong>"li"</strong> irá definer os itens da lista assim como na lista não ordenada. <br>
-            Assim como na lista não ordenadas, essa também é possível montar uma estrutura de listas dentro de outras. <br>
-            Por padrão os itens terão marcadores com números, mas podendo ser letras ou números romanos. <br>
+            A Tag <code class="codespan">&lt;ol&gt;</code> é para definer uma estrutura de listas
+            ordenada e a Tag <code class="codespan">&lt;li&gt;</code> irá definer os itens da lista
+            assim como na lista não ordenada. <br>
+            Assim como na lista não ordenadas, essa também é possível montar uma estrutura de listas
+            dentro de outras. Por padrão os itens terão marcadores com números, mas podendo ser letras
+            ou números romanos. <br>
             Além de poder retirar os marcadores como na lista anterior, é possível alterar os marcadores. <br>
             Como por exemplo.:
         </p>
