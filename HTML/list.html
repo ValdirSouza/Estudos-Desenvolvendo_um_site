@@ -41,7 +41,8 @@
             pré-definidos, mas os marcadores podem ser removidos ou trocados mudando o valor do
             atributo <i>style</i> dando o valor para ele de <i>"list-style-type:"</i> e acrescentando
             "none", "circle", "georgian", erc. Isso pode ser feito para toda lista ou apenas um item
-            da lista ao qual desejar.<br>
+            da lista ao qual desejar, mas atenção, quando é aplicado para a lista toda, as lista 
+            subsequentes não sofrem essa aplicação.<br>
             Como por exemplo.:
         </p>
         <ul>
@@ -51,16 +52,18 @@
                 <ul>
                     <li>3.1 lista</li>
                     <li>3.2 lista
-                        <ul>
+                        <ul style="list-style-type:none;"> <i>list-style-type:none</i>
                             <li>3.2.1 lista
-                                <ul style="list-style-type:none;">
+                                <ul>
                                     <li>3.2.1.1 lista</li>
                                     <li>3.2.1.2 lista
                                         <ul>
                                             <li>3.2.1.2.1 lista</li>
                                         </ul>
                                     </li>
-                                    <li  style="list-style-type:circle;">3.2.1.3 lista </li>
+                                    <li style="list-style-type:circle;">
+                                        3.2.1.3 lista _ <i>list-style-type:circle</i>
+                                    </li>
                                 </ul>
                             </li>
                             <li>3.2.2 lista</li>
@@ -75,28 +78,35 @@
         <h3 class="title3">- Listas ordenadas</h3>
         <p>
             A Tag <code class="codespan">&lt;ol&gt;</code> é para definer uma estrutura de listas
-            ordenada e a Tag <code class="codespan">&lt;li&gt;</code> irá definer os itens da lista
+            ordenada e a <code class="codespan">&lt;li&gt;</code> irá definer os itens da lista
             assim como na lista não ordenada. <br>
             Assim como na lista não ordenadas, essa também é possível montar uma estrutura de listas
-            dentro de outras. Por padrão os itens terão marcadores com números, mas podendo ser letras
-            ou números romanos. <br>
-            Além de poder retirar os marcadores como na lista anterior, é possível alterar os marcadores. <br>
+            dentro de outras. Por padrão os itens terão marcadores numéricos, além de poder retirar
+            os marcadores como na lista anterior, é possível alterar os marcadores, podendo ser
+            letras, números romanos ou iniciar de um valor númerico qualquer e seguirar a ordem.<br>
+            Para mudar o valor númerico específico que deseja que o marcador ordenado inicie, deve-se
+            declarar o atributo <i>start</i> e alterar o valor, atribuindo o número que desejar. Já 
+            para alterar o tipo, deve-se declarar o atributo <i>type</i> e alterar o valor para
+            <b>i</b> maiúsculo ou minúsculo para o marcador se tornar um número romano ou <b>a</b>
+            maiúsculo ou minúsculo para o marcador se tornar letras em ordem alfabética. Para ambas
+            configurações, o tamanho irá variar entre maiúscula ou minúscula respectivamente de acordo
+            como declarar o valor no atributo.<br>
             Como por exemplo.:
         </p>
         <ol>
             <li>- 1 lista</li>
             <li>- 2 lista</li>
             <li>- 3 lista
-                <ol start="4">
+                <ol start="4"> <i>start="4"</i>
                     <li>- 3.1 lista</li>
                     <li>- 3.2 lista
-                        <ol type="i">
+                        <ol type="i"> <i>type="i"</i>
                             <li>- 3.2.1 lista</li>
                             <li>- 3.2.2 lista
-                                <ol type="a">
+                                <ol type="a"> <i>type="a"</i>
                                     <li>- 3.2.1.1 lista</li>
                                     <li>- 3.2.1.2 lista
-                                        <ol style="list-style-type:none;">
+                                        <ol style="list-style-type:none;"> <i>list-style-type:none</i>
                                             <li>- 3.2.1.2.1 lista</li>
                                         </ol>
                                     </li>
@@ -108,10 +118,10 @@
                 </ol>
             </li>            
             <li>- 4 lista
-                <ol type="I">
+                <ol type="I"> <i>type="I"</i>
                     <li>- 4.1 lista</li>
                     <li>- 5.1 lista
-                        <ol type="A">
+                        <ol type="A"> <i>type="A"</i>
                             <li>- 5.1.1 lista</li>
                             <li>- 5.1.2 lista</li> 
                         </ol>
@@ -122,7 +132,7 @@
         </ol> <br>
         
         <button class="back" title="Voltar para a página principal">
-            <a class="back" href="index.html">< voltar</a>
+            <a class="back" href="index.html">&lt;voltar</a>
         </button>
 
     </body>
