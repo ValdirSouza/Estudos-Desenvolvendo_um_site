@@ -29,15 +29,36 @@
         </p>
         <h4 class="title4">- Tag HTML &lt;fieldset&gt;</h4>
         <p>
-            A Tag <code class="codespan">&lt;fieldset&gt;</code> é utilizada para agrupar elementos relacionados em um formulário. Está tag cria uma caixa ao redor dos elementos relacionados.
+            A Tag <code class="codespan">&lt;fieldset&gt;</code> é utilizada para agrupar elementos relacionados em um formulário ou elementos que desejar. Está tag cria uma caixa ao redor dos elementos relacionados. <br>
+            <fieldset>
+                <legend>Exemplo </legend>
+                É possível está atribuindo um título para a caixa de agrupamento, atribuindo a tag <code class="codespan">&lt;legend&gt;</code> no corpo onde os elementos foram relacionados, como neste exemplo.
+            </fieldset>
         </p>
         <h4 class="title4">- Tag HTML &lt;embed&gt;</h4>
         <p>
-            A Tag <code class="codespan">&lt;iframe&gt;</code> é um tipo de tag HTML para media, usada para incorporar arquivos multimedia de áudio e vídeo. Uma música pode tocar, quando uma página é exibida. Portanto, pode-se inserir arquivos de som dentro de um documento HTML, há extensões cujos arquivos são grandes, exigindo um tempo maior de download.
+            A Tag <code class="codespan">&lt;embed&gt;</code> é um tipo de tag HTML para medias externas, usada para incorporar arquivos multimedia de áudio e vídeo. Uma música ou vídeo podem tocar quando uma página é exibida. Portanto, pode-se inserir arquivos de som e vídeo dentro de um documento HTML, há extensões cujos arquivos são grandes, exigindo um tempo maior de download.<br>
+            Porém essa tag por questão de semântica e em caso de um robô acessar o site, ele não irá reconhecer que a tag <i>embed</i> se trata de um vídeo, devido a essa situação o ideal é utilizar a Tag <code class="codespan">&lt;video&gt;</code> e dentro de sua estrutura a Tag <code class="codespan">&lt;source&gt;</code> com o direcionamento do local do arquivo a ser reproduzido.
         </p>
         <h4 class="title4">- Tag HTML &lt;iframe&gt;</h4>
         <p>
-            A Tag <code class="codespan">&lt;embed&gt;</code> é um tipo de tag em um documento HTML vibializa a inclusão de outro documento HTML dentro do primeiro. Basicamente ele permite que a partir de uma página inicial, seja possível abrir uma seção de outra página qualquer.
+            A Tag <code class="codespan">&lt;iframe&gt;</code> é um tipo de tag em um documento HTML que vibializa a inclusão de outro documento HTML dentro do primeiro, ou seja, na mesma página. Basicamente ele permite que a partir de uma página inicial, seja possível abrir uma seção de outra página qualquer. Ou seja, ele carrega médias externas, como do youtube e pode carregar até sites inteiros. <br>
+            Essa tag tem suas particularidades de segurança, por isso é importante ter cuidado com a segurança do site ao utilizar essa tag e fazer tratativas via JavaScript. 
+        </p>
+
+        <h3 class="title3">- Formatação</h3>
+
+        <h4 class="title4">- Falando Sobre Cores</h4>
+        <p>
+            Os navagadores modernos suportam aproximadamente 140 nomes de <a class="" href="https://www.w3schools.com/tags/ref_colornames.asp">cores</a>. Existe outros meios de aplicação de cores, que dentre elas, é possível escolher entre esses tipos de valores: <br>
+            <ul>
+                <li><strong>HEX</strong></li>
+                <li><strong>HSL</strong></li>
+                <li><strong>HSLA</strong></li>
+                <li><strong>RGB</strong></li>
+                <li><strong>RGBA</strong></li>
+            </ul>
+            em hexadecimal, RGB,. Aconselho a <a class="" href="https://www.w3schools.com/colors/default.asp">cores, os valores em hexadecimal</a> 
         </p>
         
         <button class="back" title="Voltar para a página principal">
