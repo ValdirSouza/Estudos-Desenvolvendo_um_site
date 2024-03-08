@@ -11,13 +11,15 @@ nav{
 }
 nav a{
     line-height: 50px;
-    height: 100%;
-    font-size: clamp(1rem, 2.5vw, 2rem);
-    display: inline-flex;
+    height: 85%;
+    font-size: clamp(0.5rem, 2.5vw, 2rem);
+    display: flex;
     z-index: 1;
     text-decoration: none;
     text-transform: uppercase;
-    text-align: center;
+    text-align: justify;
     color: rgb(232, 227, 220);
     cursor: pointer;
+    border-style: inset;
+    border-radius: 15px;
 }
