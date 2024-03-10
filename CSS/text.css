@@ -1,0 +1,19 @@
+/*.caption {
+    background-color: rgba(227, 224, 224, 0.986);
+}
+.tagcolor {
+    color: rgb(0, 0, 205);
+}
+.tagname {
+    color: rgb(165, 42, 42);
+}*/
+code {
+    color: rgba(175, 9, 9, 0.909);
+    .
+}
+
+:is(ul, ol) {
+    list-style-type: disc;
+} ::marker{
+    color: rgba(234, 11, 11, 0.8);
+}
