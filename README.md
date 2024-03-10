@@ -1,6 +1,6 @@
 # Estudos-Desenvolvendo_um_site
 
-Este projeto está em desenvolvimento com o intuito de estudar as linguagens HTML, CSS e incorporar o conhecimento que possuo com JavaScript, além de fortalecer esse conhecimento. E como oportunidade desenvolver o meu primeiro site, servindo para futuras consultas.  
+Este projeto está em desenvolvimento com o intuito de estudar as linguagens HTML, CSS para conseguir incorporar e demonstrar de alguma forma o conhecimento que possuo com JavaScript, além de fortalecer esse conhecimento. E como oportunidade desenvolver o meu primeiro site, servindo para futuras consultas.  
   
 ## Referências
 
