@@ -12,3 +12,4 @@ ___
 [FlatIcon](https://www.flaticon.com/br/)  
 [Icons8](https://icons8.com.br/)  
 [Hostinger Tutoriais](https://www.hostinger.com.br/tutoriais/url#HTTP_ou_HTTPS)  
+[Steemit - Unicode](https://steemit.com/english/@steemat/emojis-for-steemit-titles-and-comments-official-list)

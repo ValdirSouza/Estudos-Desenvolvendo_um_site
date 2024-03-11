@@ -23,3 +23,7 @@
 } ::marker{
     color: rgba(234, 11, 11, 0.8);
 }
+
+#subitem {
+    list-style-type: "\2BA9";
+}
