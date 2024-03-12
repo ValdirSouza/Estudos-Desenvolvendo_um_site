@@ -13,3 +13,4 @@ ___
 [Icons8](https://icons8.com.br/)  
 [Hostinger Tutoriais](https://www.hostinger.com.br/tutoriais/url#HTTP_ou_HTTPS)  
 [Steemit - Unicode](https://steemit.com/english/@steemat/emojis-for-steemit-titles-and-comments-official-list)
+[Quackit](https://www.quackit.com/character_sets/unicode/versions/unicode_9.0.0/co_controls_and_basic_latin_unicode_character_codes.cfm)
