@@ -28,13 +28,13 @@
             <a href="list.html">List</a>
             <a href="introductionCSS.html">CSS</a>
         </nav>
-        
+
         <h2 class="title2">Falando Sobre Formulários</h2>
 
         <h3 class="title3">- Introdução</h3>
         <p>
             Formulário serve para preenchimento de informações e praticamente trabalha junto com o servidor, para onde é enviado e processado esses dados. <br>
-            Ele é declarado pela tag <a href="form.html#exemploform">form</a>, que é composta por <a href="form.html#atributos">atributos</a> para configurações e <a href="form.html#inputetipos">inputs</a> para compor sua estruta de entrada de informações com os tipos de entradas de dados que cada campo irá aceitar de acordo com o que for configurado.
+            Ele é declarado pela tag <code class="codespan">&lt;<a href="form.html#exemploform" title="Exemplo de Formulário">form</a>&gt;</code> , que é composta por <a href="form.html#atributos" title="Explicação sobre Atributos">atributos</a> para configurações e <a href="form.html#inputetipos" title="Explicação sobre tipos de Inputs">inputs</a> para compor sua estruta de entrada de informações com os tipos de entradas de dados que cada campo irá aceitar de acordo com o que for configurado.
         </p>
         
         <h3 class="title3" id="atributos" name="atributos">- Atributos</h3>
@@ -137,8 +137,8 @@
         <mark class="caption">selectbox</mark>
         <p>
             O tipo <i>selectbox</i> é um campo do tipo caixa de seleção, basicamente é uma lista pré definida dos valores que o usuário pode escolhar, matendo padrões definidos e evitando a  necessidade ou possibilidade de digitar algum dado para ser enviado.<br>
-            Para configurar as opções que o usuário terá disponível para selecionar no selectbox deve-se usar a tag <i>option</i> dentro da estrutura de informações da tag <i>select</i>. Está tag envia o valor que estiver descrito no atribulo <i>value</i> e apresenta para o usuário o valor que está descrito no corpo da estrutura.<br>
-            Caso seja necessário um tipo de selectbox que o usuário possa selecionar várias opções, existe a tag <i>multiple</i> que possibilita essa opção, basta está incluindo ela no cabeçalho da tag <i>select</i>. 
+            Para configurar as opções que o usuário terá disponível para selecionar no selectbox deve-se usar a tag <code class="codespan">&lt;option&gt;</code> dentro da estrutura de informações da tag <code class="codespan">&lt;select&gt;</code>. Está tag envia o valor que estiver descrito no atributo <i>value</i> e apresenta para o usuário o valor que está descrito no corpo da estrutura.<br>
+            Caso seja necessário um tipo de selectbox que o usuário possa selecionar várias opções, existe a tag <code class="codespan">&lt;multiple&gt;</code> que possibilita essa opção, basta está incluindo ela no cabeçalho da tag <code class="codespan">&lt;select&gt;</code>. 
         </p>
         <mark class="caption">text</mark>
         <p>
@@ -146,7 +146,7 @@
         </p>
         <mark class="caption">textarea</mark>
         <p>
-            O tipo <i>textarea</i> é um campo do tipo texto que aceita letras, números e caracteres especiais. A diferença dele para o <i>text</i> é que ele é um campo que não depende da tag <i>input</i> para ser estruturado e por padrão ele é maior do que os demais campos, próprio para inserir mais informações e possui opção de redimensionar a área de digitação. Se caso o layout não permite que o usuário fique redimensionando o tamanho da área de digitação, é possível através do CSS travar o tamanho da área.<br>
+            O tipo <i>textarea</i> é um campo do tipo texto que aceita letras, números e caracteres especiais. A diferença dele para o <i>text</i> é que ele é um campo que não depende da tag <code class="codespan">&lt;input&gt;</code> para ser estruturado e por padrão ele é maior do que os demais campos, próprio para inserir mais informações e possui opção de redimensionar a área de digitação. Se caso o layout não permite que o usuário fique redimensionando o tamanho da área de digitação, é possível através do CSS travar o tamanho da área.<br>
             Algo importante é que o tamanho padrão da área de digitação, pode ser alterado, sendo definindo através dos atributos <i>rows</i> e <i>cols</i>, que é o tamanho da  altura e largura, respectivamente, sendo a altura a quantidade de linhas e largura a quantidade colunas.
         </p>
         <mark class="caption">url</mark>
