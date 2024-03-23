@@ -13,6 +13,8 @@
 }
 .caption {
     background-color: rgba(227, 224, 224, 0.986);
+    font-size: 105%;
+    border-radius: 5px;
 }
 .tagcolor {
     color: rgb(0, 0, 205);
