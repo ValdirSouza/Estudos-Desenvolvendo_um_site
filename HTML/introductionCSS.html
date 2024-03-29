@@ -110,9 +110,15 @@
                     O <i>Seletor de Atributo</i> busca elementos que possuem um atributo específico no documento HTML e consegue também buscar atributos com um valor específico no documento. Dessa forma irá aplicar a estilização em todos os elementos do documento que poussuir a tag que foi citada. A baixo um exemplo de como declarar o código em CSS:
 
                     <fieldset>
+                        /*todos atributos*/ <br>
                         [title] {<br>
                         color: red;<br>
-                        }
+                        }<br><br>
+
+                        /*por atributo filtrado*/ <br>
+                        [title="Call"] {<br>
+                        color: red;<br>
+                        }<br>
                     </fieldset>
                 </p>
 
